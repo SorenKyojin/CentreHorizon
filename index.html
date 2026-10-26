@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Centre Horizon - Accueil</title>
 </head>
-<body>
+<body class="flex-center">
     <header>
         <h1>Centre <span class="blue-title">Horizon</span></h1>
         <nav>
-            <a href="index.html">Accueil</a>
+            <a href="index.html" class="active-page">Accueil</a>
             <a href="formation.html">Formations</a>
             <a href="#">Sessions</a>
             <a href="inscription.html">Inscription</a>
@@ -24,6 +24,51 @@
     </section>
     <main>
         <h2>Nos formations</h2>
+        <section class="container">
+            <div id="card1" class="card">
+                <img src="img/dev.svg" alt="">
+                <div class="card-text">
+                    <h3>Développeur Web</h3>
+                    <p>Créer des sites et des applications, du HTML au back-end</p>
+                    <p>
+                        <span>Durée : 6 Mois</span>
+                        <span>Niveau : Débutant</span>
+                    </p>
+                    <a href="">Voir le programme</a>
+                </div>
+            </div>
+            <div id="card2" class="card">
+                <img src="img/data.svg" alt="">
+                <div class="card-text">
+                    <h3>Analyste de données</h3>
+                    <p>Collecter, nettoyer et présenter des données pour aider à décider.</p>
+                    <p>
+                        <span>Durée : 5 Mois</span>
+                        <span>Niveau : Débutant</span>
+                    </p>
+                    <a href="">Demander des informations</a>
+                </div>
+            </div>
+            <div id="card3" class="card">
+                <img src="img/ia.svg" alt="">
+                <div class="card-text">
+                    <h3>Développeur IA</h3>
+                    <p>Concevoir et intégrer des programmes d'intelligence artificielle.</p>
+                    <p>
+                        <span>Durée : 12 Mois</span>
+                        <span>Niveau : Intermédiaire</span>
+                    </p>
+                    <a href="">Demander des informations</a>
+                </div>
+            </div>
+        </section>
     </main>
+    <section class="home-bottom container">
+        <h2>Prochaines Sessions</h2>
+        <div>
+            <h4>Sessions ouvertes aux inscriptions</h4>
+
+        </div>
+    </section>
 </body>
 </html>
