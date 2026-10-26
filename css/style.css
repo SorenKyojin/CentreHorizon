@@ -138,6 +138,8 @@ footer {
 }
 .button{
     background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
     color: var(--navy-blue);
     padding: 16px 25px;
     border-radius: 8px;
