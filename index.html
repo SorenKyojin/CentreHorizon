@@ -14,7 +14,7 @@
             <a href="formation.html">Formations</a>
             <a href="#">Sessions</a>
             <a href="inscription.html">Inscription</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <section class="home-top">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="home-bottom">
+        <section class="home-mid">
             <h2>Prochaines Sessions</h2>
             <div>
                 <h4>Sessions ouvertes aux inscriptions</h4>
@@ -103,6 +103,28 @@
                 </tbody>
             </table>
             </div>
+        </section>
+        <section id="contact" class="home-bottom grey-bg">
+            <h2>Nous contacter</h2>
+            <form action="post" class="contact-form">
+                <div class="contact-top">
+                    <div class="input-ctn"><label for="name">Nom</label>
+                    <input type="text" id="name"></div>
+                    <div class="input-ctn"><label for="email">Adresse email</label>
+                    <input type="email" id="email"></div>
+                </div>
+                <div class="contact-bottom">
+                    <label for="formation">Formation</label>
+                    <select name="formation" id="formation">
+                        <option value="web">Développeur Web</option>
+                        <option value="data">Analyste de données</option>
+                        <option value="ai">Développeur IA</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="20"></textarea>
+                </div>
+                <input type="submit" value="Envoyer" class="button send-button">
+            </form>
         </section>
     </main>
 </body>
