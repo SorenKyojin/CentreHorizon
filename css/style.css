@@ -132,9 +132,22 @@ main{
     align-items: center;
 }
 .home-bottom{
-    background-color: var(--grey-bg);
-    width: 60%;
+    position: relative;
+    isolation: isolate;
     display: flex;
     flex-direction: column;
     padding: 48px;
+    align-self: stretch;
+    margin: 0 -48px;
+}
+.home-bottom::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background-color: var(--grey-bg);
 }
