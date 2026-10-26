@@ -39,12 +39,6 @@ nav a:hover {
     color: var(--nav-link-hover);
 }
 
-.point /*point dans le footer et à coté d'accueil*/{
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--yellow);
-
-}
 
 footer {
     color: white;
@@ -149,5 +143,29 @@ main{
     left: 50%;
     width: 100vw;
     transform: translateX(-50%);
+}
+.blue-link{
+    color: var(--link-color);
+    transition-duration: 0.3s;
+}
+.blue-link:hover{
+    color: var(--link-hover);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    padding: 20px;
+}
+thead{
+    background-color: var(--navy-blue);
+    color: #fff;
+    text-align: left;
+}
+tr{
+    border-bottom: 1px solid #d1d5db;
+}
+.grey-bg{
     background-color: var(--grey-bg);
 }
