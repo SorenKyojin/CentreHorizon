@@ -288,6 +288,7 @@ input, select, textarea{
 .contact-bottom #message{
     min-height: 96px;
     margin-bottom: 20px;
+    max-width: 100%;
 }
 .input-ctn{
     display: flex;
@@ -318,7 +319,7 @@ padding-left:50px ;
 }
 /*ALM*/
 .pre_inscription {
-    background-color: var(--blue);
+    background-color: #1a73e8;
     color: white;
     padding: 20px;
     padding-left: 50px;
@@ -354,8 +355,53 @@ padding-left:50px ;
 
 }
 /*ALM*/
-.inscription form {
+.inscription form  {
     width: 80%;
     margin: 0 auto;
+    background-color: white;
+    border: solid grey 1px ;
+    border-radius: 10px;
     padding-bottom: 20px;
+
+
+
+    
+}
+
+
+
+/*ALM*/
+.dossier_inscription form {
+    padding: 15px;
+    
+}
+
+.dossier_inscription fieldset {
+    border-radius: 10px;
+}
+
+/*ALM*/
+
+.formulaire {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 50%; */
+    justify-content: space-around;
+    
+}
+
+/*ALM*/
+
+.formulaire div, .formulaire2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+/*ALM*/
+
+p span {
+    font-weight: 400;
 }

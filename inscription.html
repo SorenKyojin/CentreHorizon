@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centre Horizon - inscription</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Centre Horizon - Inscription</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="./style_1.css">
+
 </head>
+
 <body>
 
     <header>
@@ -19,22 +26,205 @@
         </nav>
     </header>
 
-    <main>
-         <p>
-            <a href="">Accueil</a> <span class="point">·</span> <strong>Inscription</strong>
-        </p>
+    <main class="inscription">
+
+        <section class="fil_Ariane">
+            <p><a href="">Accueil</a> > <strong>Inscription</strong></p>
+        </section>
+
+        <section class="pre_inscription">
+            <h1>
+                Pré-inscription
+
+
+            </h1>
+
+            <p>
+                Remplissez ce formulaire : notre équipe vous recontacte sous cinq
+                jours ouvrés.
+
+
+            </p>
+        </section>
+
+        <h2>
+            Comment se passe l'inscription ?
+        </h2>
+
+        <section class="explication_inscription">
+
+
+            <article class="article1">
+                <h3>Pré-inscription</h3>
+                <p>Vous remplissez le formulaire ci-dessous avec votre CV.</p>
+
+            </article>
+
+            <article class="article2">
+                <h3>Tests de positionnement </h3>
+                <p> Une demi-journée d'exercices de logique et
+                    de découverte du code.
+                </p>
+
+
+            </article>
+
+            <article class="article3">
+
+                <h3>Entretien individuel</h3>
+                <p>Nous échangeons sur votre projet et sur le
+                    financement.
+                </p>
+
+
+            </article>
+
+
+        </section>
+
+        <section class="dossier_inscription">
+            <h2>Votre dossier</h2>
+            <form>
+                <p>
+                    Les champs marqués d'un * sont obligatoires
+                </p>
+                <fieldset>
+                    <legend>Vos informations</legend>
+
+
+                    <div class="formulaire">
+                        <div>
+                            <label for="prenom">
+                                Prénom *
+                            </label>
+                            <input type="text" id="prenom" required>
+                        </div>
+
+
+                        <div>
+                            <label for="nom">
+                                Nom *
+                            </label>
+                            <input type="text" id="nom" required>
+                        </div>
+                    </div>
+
+                    <div class="formulaire">
+                        <div>
+                            <label for="email">
+                                Adresse e-mail * </label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div>
+                            <label for="tel">
+                                Téléphone
+
+                            </label>
+                            <input type="tel" id="tel">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset class="projet">
+
+                    <legend>Votre projet</legend>
+
+                    <div class="formulaire">
+                        <div>
+                            <label for="formation">
+                                Formation souhaitée *
+                            </label>
+                            <select id="formation" name="formation">
+                                <option value="valeur1">Développeur web</option>
+                                <option value="valeur2">Analyste de données</option>
+                                <option value="valeur3">Développeur IA (liste d'attente)</option>
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <label for="Niveau_etudes"> Niveau d'études
+
+                            </label>
+                            <select id="Niveau_etudes" name="Niveau_etudes">
+                                <option value="valeur1">Sans diplôme</option>
+                                <option value="valeur2">CAP ou BEP</option>
+                                <option value="valeur3">Baccalauréat</option>
+                                <option value="valeur4">Bac + 2</option>
+                                <option value="valeur4">Bac + 3 et plus</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <article class=" Situation">
+                        <p>Situation actuelle * </p>
+                        <div>
+                            <label for="Demandeur_emploi"><input type="radio" id="Demandeur_emploi">Demandeur·se
+                                d'emploi</label>
+                            <label for="Salarié·e"><input type="radio" id="Salarié·e">Salarié·e</label>
+                            <label for="Étudiant·e"><input type="radio" id="Étudiant·e">Étudiant·e</label>
+                            <label for="Autre"><input type="radio" id="Autre">Autre</label>
+                        </div>
+                    </article>
+
+
+                    <div class="formulaire2">
+                        <label for="motivation"> Pourquoi cette formation ? *
+
+                        </label>
+                        <textarea name="motivation" id="motivation" required maxlength="800"></textarea>
+                        <p><span> 800 caratères maximum </span></p>
+                    </div>
+
+                    <div class="formulaire2">
+                        <label for="fichier"> CV (PDF, 2 Mo maximum)
+
+                        </label>
+                        <input type="file" id="fichier">
+                    </div>
+
+
+
+
+                </fieldset>
+
+                <label for="mention">
+                    <input type="checkbox" required id="mention"> J'accepte que mes données servent à traiter ma
+                    candidature. *
+                </label>
+
+
+                <label for="envoyer">
+                    <input type="submit" value="Envoyer ma candidature" id="envoyer">
+                </label>
+
+                <label for="effacer">
+                    <input type="submit" value="Effacer" id="effacer">
+                </label>
+
+
+            </form>
+
+        </section>
+
+
 
 
     </main>
 
     <footer>
 
-         <p>
+        <p>
             &copy; 2026 Centre Horizon · 12 rue des Écoles, 60100 Creil
         </p>
 
 
     </footer>
-    
+
 </body>
+
 </html>
