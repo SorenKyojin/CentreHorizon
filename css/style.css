@@ -103,11 +103,19 @@ ul {
     margin: 5px;
 }
 
+/*Tim*/
+.questions p {
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 10px;
+}
+
 footer {
     color: white;
     background-color: var(--navy-blue);
     text-align: center;
     padding: 15px;
+    align-self: stretch;
 }
 
 
@@ -404,4 +412,10 @@ padding-left:50px ;
 
 p span {
     font-weight: 400;
+}
+
+/*ALM*/
+.article_explication p:first-child {
+    font-weight: bold;
+    font-size: 20px;
 }
