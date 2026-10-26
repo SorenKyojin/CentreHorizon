@@ -1,11 +1,84 @@
-
+:root{
+    /* Variables permettant de changer les couleurs pour tous les éléments ayant cette couleur */
+    --navy-blue: #0b2a5b;
+    --blue: #1a73e8;
+    --light-blue: #7cc4ff;
+    --link-color: #1557b0;
+    --yellow: #f9ab00;
+    --nav-link-active: #f9ab00;
+    --nav-link-hover: #ffd477;
+    --button-hover: #ffd477;
+    --font-color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
     font-family: Arial,sans-serif;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 8px 64px;
+}
+nav a {
+    margin: 16px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+nav a:hover {
+    color: var(--nav-link-hover);
+}
+
+.point /*point dans le footer et à coté d'accuei*/{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--yellow);
+
+}
+
 footer {
     color: white;
-    background-color: #0b2a5b;
+    background-color: var(--navy-blue);
     text-align: center;
+    padding: 15px;
+}
+
+
+.blue-title{
+    color: #7cc4ff;
+}
+
+.home-top{
+    background-color: var(--blue);
+    text-align: center;
+    padding: 64px 35%;
+}
+
+.home-top h1, p{
+    color: white;
+}
+.home-top p{
+    margin-bottom: 48px;
+}
+.button{
+    background-color: var(--yellow);
+    color: var(--navy-blue);
+    padding: 16px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.button:hover{
+    background-color: var(--button-hover);
+}
+h2{
+    border-left: 3px solid var(--blue);
+    padding: 0 12px;
 }
