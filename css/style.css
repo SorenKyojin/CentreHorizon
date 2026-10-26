@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 :root{
     /* Variables permettant de changer les couleurs pour tous les éléments ayant cette couleur */
     --navy-blue: #0b2a5b;
@@ -277,17 +282,19 @@ input, select, textarea{
     flex-direction: column;
 }
 .contact-bottom #formation{
+    background-color: white;
     margin-bottom: 20px;
 }
 .contact-bottom #message{
     min-height: 96px;
+    margin-bottom: 20px;
 }
 .input-ctn{
     display: flex;
     flex-direction: column;
 }
 .contact-form input{
-    height: 32px;
+    height: 48px;
     padding: 8px;
     width: 100%;
     font-size: larger;
@@ -301,6 +308,7 @@ input, select, textarea{
     cursor: pointer;
     max-width: 128px;
     min-height: 48px;
+    padding: 10px;
 }
 
 /*ALM*/
